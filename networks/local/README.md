@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- [Install gaia](https://cosmos.network/docs/getting-started/installation.html)
+- [Install gaia](https://kingblockio.network/docs/getting-started/installation.html)
 - [Install docker](https://docs.docker.com/engine/installation/)
 - [Install docker-compose](https://docs.docker.com/compose/install/)
 
@@ -14,7 +14,7 @@ Note the binary will be mounted into the container so it can be updated without
 rebuilding the image.
 
 ```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+cd $GOPATH/src/github.com/kingblockio/kingblock
 
 # Build the linux binary in ./build
 make build-linux
@@ -52,7 +52,7 @@ The `./build` directory is mounted to the `/gaiad` mount point to attach the bin
 For instance, to create a single node testnet:
 
 ```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+cd $GOPATH/src/github.com/kingblockio/kingblock
 
 # Clear the build folder
 rm -rf ./build

@@ -1,10 +1,10 @@
 package keys
 
 import (
-	ccrypto "github.com/cosmos/cosmos-sdk/crypto"
+	ccrypto "github.com/kingblockio/kingblock/crypto"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
+	"github.com/kingblockio/kingblock/crypto/keys/hd"
 )
 
 // Keybase exposes operations on a generic keystore

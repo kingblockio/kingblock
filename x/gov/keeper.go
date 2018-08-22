@@ -1,9 +1,9 @@
 package gov
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	wire "github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/bank"
+	sdk "github.com/kingblockio/kingblock/types"
+	wire "github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/bank"
 )
 
 // Governance Keeper

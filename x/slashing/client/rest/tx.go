@@ -9,11 +9,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
+	"github.com/kingblockio/kingblock/client/context"
+	"github.com/kingblockio/kingblock/crypto/keys"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/slashing"
 )
 
 func registerTxRoutes(ctx context.CoreContext, r *mux.Router, cdc *wire.Codec, kb keys.Keybase) {

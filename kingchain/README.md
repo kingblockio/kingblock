@@ -6,18 +6,18 @@ what is happening under the hood.
 
 ## Setup and Install
 
-You will need to have go installed on your computer. Please refer to the [cosmos testnet tutorial](https://cosmos.network/validators/tutorial), which will always have the most updated instructions on how to get setup with go and the cosmos repository.
+You will need to have go installed on your computer. Please refer to the [kingblockio testnet tutorial](https://kingblockio.network/validators/tutorial), which will always have the most updated instructions on how to get setup with go and the kingblockio repository.
 
 Once you have go installed, run the command:
 
 ```
-go get github.com/cosmos/cosmos-sdk
+go get github.com/kingblockio/kingblock
 ```
 
-There will be an error stating `can't load package: package github.com/cosmos/cosmos-sdk: no Go files`, however you can ignore this error, it doesn't affect us. Now change directories to:
+There will be an error stating `can't load package: package github.com/kingblockio/kingblock: no Go files`, however you can ignore this error, it doesn't affect us. Now change directories to:
 
 ```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+cd $GOPATH/src/github.com/kingblockio/kingblock
 ```
 
 And run :

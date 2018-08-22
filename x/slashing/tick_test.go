@@ -8,8 +8,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/x/stake"
 )
 
 func TestBeginBlocker(t *testing.T) {

@@ -7,8 +7,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/crypto"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/x/stake/types"
 )
 
 // get a single validator

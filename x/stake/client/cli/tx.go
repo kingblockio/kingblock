@@ -7,13 +7,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/kingblockio/kingblock/client"
+	"github.com/kingblockio/kingblock/client/context"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	authcmd "github.com/kingblockio/kingblock/x/auth/client/cli"
+	"github.com/kingblockio/kingblock/x/stake"
+	"github.com/kingblockio/kingblock/x/stake/types"
 )
 
 // create create validator command

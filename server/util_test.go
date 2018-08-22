@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/wire"
 	"github.com/stretchr/testify/require"
 )
 

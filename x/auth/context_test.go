@@ -8,7 +8,7 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 func TestContextWithSigners(t *testing.T) {

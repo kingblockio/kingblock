@@ -1,10 +1,10 @@
 package store
 
 import (
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/kingblockio/kingblock/types"
 )
 
-// Import cosmos-sdk/types/store.go for convenience.
+// Import kingblock/types/store.go for convenience.
 // nolint
 type (
 	Store            = types.Store

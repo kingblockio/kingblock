@@ -1,9 +1,9 @@
 package app
 
 import (
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/auth"
+	"github.com/kingblockio/kingblock/x/stake"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 )

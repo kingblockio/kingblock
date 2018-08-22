@@ -18,10 +18,10 @@ const (
 	AddrLen = 20
 
 	// Bech32 prefixes
-	Bech32PrefixAccAddr = "cosmosaccaddr"
-	Bech32PrefixAccPub  = "cosmosaccpub"
-	Bech32PrefixValAddr = "cosmosvaladdr"
-	Bech32PrefixValPub  = "cosmosvalpub"
+	Bech32PrefixAccAddr = "kingblockioaccaddr"
+	Bech32PrefixAccPub  = "kingblockioaccpub"
+	Bech32PrefixValAddr = "kingblockiovaladdr"
+	Bech32PrefixValPub  = "kingblockiovalpub"
 )
 
 //__________________________________________________________

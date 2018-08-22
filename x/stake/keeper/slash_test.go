@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/x/stake/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 
@@ -260,7 +260,7 @@ func TestSlashWithUnbondingDelegation(t *testing.T) {
 	// slash validator again
 	// all originally bonded stake has been slashed, so this will have no effect
 	// on the unbonding delegation, but it will slash stake bonded since the infraction
-	// this may not be the desirable behaviour, ref https://github.com/cosmos/cosmos-sdk/issues/1440
+	// this may not be the desirable behaviour, ref https://github.com/kingblockio/kingblock/issues/1440
 	ctx = ctx.WithBlockHeight(13)
 	keeper.Slash(ctx, pk, 9, 10, fraction)
 	ubd, found = keeper.GetUnbondingDelegation(ctx, addrDels[0], addrVals[0])
@@ -280,7 +280,7 @@ func TestSlashWithUnbondingDelegation(t *testing.T) {
 	// slash validator again
 	// all originally bonded stake has been slashed, so this will have no effect
 	// on the unbonding delegation, but it will slash stake bonded since the infraction
-	// this may not be the desirable behaviour, ref https://github.com/cosmos/cosmos-sdk/issues/1440
+	// this may not be the desirable behaviour, ref https://github.com/kingblockio/kingblock/issues/1440
 	ctx = ctx.WithBlockHeight(13)
 	keeper.Slash(ctx, pk, 9, 10, fraction)
 	ubd, found = keeper.GetUnbondingDelegation(ctx, addrDels[0], addrVals[0])

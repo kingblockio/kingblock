@@ -8,9 +8,9 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/kingblockio/kingblock/client"
+	"github.com/kingblockio/kingblock/client/context"
+	sdk "github.com/kingblockio/kingblock/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 )
 

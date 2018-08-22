@@ -10,7 +10,7 @@ import (
 type ValidSentenceLen uint8
 
 const (
-	// FundRaiser is the sentence length used during the cosmos fundraiser (12 words).
+	// FundRaiser is the sentence length used during the kingblockio fundraiser (12 words).
 	FundRaiser ValidSentenceLen = 12
 	// Size of the checksum employed for the fundraiser
 	FundRaiserChecksumSize = 4

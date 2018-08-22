@@ -3,8 +3,8 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	types "github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/kingblockio/kingblock/types"
+	types "github.com/kingblockio/kingblock/x/stake/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 
@@ -29,8 +29,8 @@ func (k Keeper) Slash(ctx sdk.Context, pubkey crypto.PubKey, infractionHeight in
 
 	// Amount of slashing = slash slashFactor * power at time of infraction
 	slashAmount := sdk.NewRat(power).Mul(slashFactor)
-	// ref https://github.com/cosmos/cosmos-sdk/issues/1348
-	// ref https://github.com/cosmos/cosmos-sdk/issues/1471
+	// ref https://github.com/kingblockio/kingblock/issues/1348
+	// ref https://github.com/kingblockio/kingblock/issues/1471
 
 	validator, found := k.GetValidatorByPubKey(ctx, pubkey)
 	if !found {
@@ -180,7 +180,7 @@ func (k Keeper) slashUnbondingDelegation(ctx sdk.Context, unbondingDelegation ty
 		k.SetUnbondingDelegation(ctx, unbondingDelegation)
 		pool := k.GetPool(ctx)
 		// Burn loose tokens
-		// Ref https://github.com/cosmos/cosmos-sdk/pull/1278#discussion_r198657760
+		// Ref https://github.com/kingblockio/kingblock/pull/1278#discussion_r198657760
 		pool.LooseTokens = pool.LooseTokens.Sub(slashAmount)
 		k.SetPool(ctx, pool)
 	}

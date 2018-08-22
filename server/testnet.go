@@ -7,11 +7,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	gc "github.com/cosmos/cosmos-sdk/server/config"
+	gc "github.com/kingblockio/kingblock/server/config"
 
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/wire"
 	"github.com/spf13/viper"
 	cfg "github.com/tendermint/tendermint/config"
 	cmn "github.com/tendermint/tendermint/libs/common"

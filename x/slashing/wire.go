@@ -1,12 +1,12 @@
 package slashing
 
 import (
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/wire"
 )
 
 // Register concrete types on wire codec
 func RegisterWire(cdc *wire.Codec) {
-	cdc.RegisterConcrete(MsgUnrevoke{}, "cosmos-sdk/MsgUnrevoke", nil)
+	cdc.RegisterConcrete(MsgUnrevoke{}, "kingblock/MsgUnrevoke", nil)
 }
 
 var cdcEmpty = wire.NewCodec()

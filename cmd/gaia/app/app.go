@@ -11,15 +11,15 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	bam "github.com/kingblockio/kingblock/baseapp"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/auth"
+	"github.com/kingblockio/kingblock/x/bank"
+	"github.com/kingblockio/kingblock/x/gov"
+	"github.com/kingblockio/kingblock/x/ibc"
+	"github.com/kingblockio/kingblock/x/slashing"
+	"github.com/kingblockio/kingblock/x/stake"
 )
 
 const (
@@ -156,7 +156,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	var genesisState GenesisState
 	err := app.cdc.UnmarshalJSON(stateJSON, &genesisState)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+		panic(err) // TODO https://github.com/kingblockio/kingblock/issues/468
 		// return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 
@@ -170,7 +170,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	// load the initial stake information
 	err = stake.InitGenesis(ctx, app.stakeKeeper, genesisState.StakeData)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+		panic(err) // TODO https://github.com/kingblockio/kingblock/issues/468
 		// return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 

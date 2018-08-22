@@ -1,8 +1,8 @@
 package client
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bank "github.com/cosmos/cosmos-sdk/x/bank"
+	sdk "github.com/kingblockio/kingblock/types"
+	bank "github.com/kingblockio/kingblock/x/bank"
 )
 
 // build the sendTx msg

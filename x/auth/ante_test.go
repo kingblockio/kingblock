@@ -10,8 +10,8 @@ import (
 	"github.com/tendermint/tendermint/crypto/ed25519"
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	wire "github.com/cosmos/cosmos-sdk/wire"
+	sdk "github.com/kingblockio/kingblock/types"
+	wire "github.com/kingblockio/kingblock/wire"
 )
 
 func newTestMsg(addrs ...sdk.AccAddress) *sdk.TestMsg {

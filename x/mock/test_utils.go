@@ -3,8 +3,8 @@ package mock
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/kingblockio/kingblock/baseapp"
+	sdk "github.com/kingblockio/kingblock/types"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/crypto"

@@ -3,13 +3,13 @@ package app
 import (
 	"encoding/json"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/examples/basecoin/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
+	bam "github.com/kingblockio/kingblock/baseapp"
+	"github.com/kingblockio/kingblock/examples/basecoin/types"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/auth"
+	"github.com/kingblockio/kingblock/x/bank"
+	"github.com/kingblockio/kingblock/x/ibc"
 	abci "github.com/tendermint/tendermint/abci/types"
 	cmn "github.com/tendermint/tendermint/libs/common"
 	dbm "github.com/tendermint/tendermint/libs/db"
@@ -133,14 +133,14 @@ func (app *BasecoinApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) 
 	genesisState := new(types.GenesisState)
 	err := app.cdc.UnmarshalJSON(stateJSON, genesisState)
 	if err != nil {
-		// TODO: https://github.com/cosmos/cosmos-sdk/issues/468
+		// TODO: https://github.com/kingblockio/kingblock/issues/468
 		panic(err)
 	}
 
 	for _, gacc := range genesisState.Accounts {
 		acc, err := gacc.ToAppAccount()
 		if err != nil {
-			// TODO: https://github.com/cosmos/cosmos-sdk/issues/468
+			// TODO: https://github.com/kingblockio/kingblock/issues/468
 			panic(err)
 		}
 

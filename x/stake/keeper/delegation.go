@@ -3,8 +3,8 @@ package keeper
 import (
 	"bytes"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/x/stake/types"
 )
 
 // load a delegation

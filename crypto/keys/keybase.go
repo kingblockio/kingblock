@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/bip39"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
+	"github.com/kingblockio/kingblock/crypto"
+	"github.com/kingblockio/kingblock/crypto/keys/bip39"
+	"github.com/kingblockio/kingblock/crypto/keys/hd"
 	"github.com/pkg/errors"
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/encoding/amino"

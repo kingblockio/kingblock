@@ -3,7 +3,7 @@ package bank
 import (
 	"encoding/json"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 // MsgSend - high level transaction of the coin module

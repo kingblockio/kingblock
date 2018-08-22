@@ -11,10 +11,10 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	gc "github.com/cosmos/cosmos-sdk/server/config"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
+	bam "github.com/kingblockio/kingblock/baseapp"
+	gc "github.com/kingblockio/kingblock/server/config"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
 )
 
 // NewApp creates a simple mock kvstore app for testing. It should work
@@ -94,7 +94,7 @@ func InitChainer(key sdk.StoreKey) func(sdk.Context, abci.RequestInitChain) abci
 		genesisState := new(GenesisJSON)
 		err := json.Unmarshal(stateJSON, genesisState)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/kingblockio/kingblock/issues/468
 			// return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 

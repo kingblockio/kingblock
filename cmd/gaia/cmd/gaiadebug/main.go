@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"strings"
 
-	gaia "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	gaia "github.com/kingblockio/kingblock/cmd/gaia/app"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/x/auth"
 	"github.com/spf13/cobra"
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/ed25519"

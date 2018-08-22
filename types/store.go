@@ -9,7 +9,7 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 )
 
-// NOTE: These are implemented in cosmos-sdk/store.
+// NOTE: These are implemented in kingblock/store.
 
 // PruningStrategy specfies how old states will be deleted over time
 type PruningStrategy uint8

@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 //changing the int in NewSource will allow you to test different, deterministic, sets of operations

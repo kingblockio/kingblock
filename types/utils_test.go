@@ -13,10 +13,10 @@ func TestSortJSON(t *testing.T) {
 		wantErr      bool
 	}{
 		// simple case
-		{unsortedJSON: `{"cosmos":"foo", "atom":"bar",  "tendermint":"foobar"}`,
-			want: `{"atom":"bar","cosmos":"foo","tendermint":"foobar"}`, wantErr: false},
+		{unsortedJSON: `{"kingblockio":"foo", "atom":"bar",  "tendermint":"foobar"}`,
+			want: `{"atom":"bar","kingblockio":"foo","tendermint":"foobar"}`, wantErr: false},
 		// failing case (invalid JSON):
-		{unsortedJSON: `"cosmos":"foo",,,, "atom":"bar",  "tendermint":"foobar"}`,
+		{unsortedJSON: `"kingblockio":"foo",,,, "atom":"bar",  "tendermint":"foobar"}`,
 			want:    "",
 			wantErr: true},
 		// genesis.json

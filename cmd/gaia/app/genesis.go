@@ -8,12 +8,12 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	"github.com/kingblockio/kingblock/server"
+	"github.com/kingblockio/kingblock/server/config"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/auth"
+	"github.com/kingblockio/kingblock/x/stake"
 )
 
 var (

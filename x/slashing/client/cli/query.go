@@ -7,10 +7,10 @@ import (
 	"github.com/spf13/viper"
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire" // XXX fix
-	"github.com/cosmos/cosmos-sdk/x/slashing"
+	"github.com/kingblockio/kingblock/client/context"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire" // XXX fix
+	"github.com/kingblockio/kingblock/x/slashing"
 )
 
 // get the command to query signing info

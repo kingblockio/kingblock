@@ -14,7 +14,7 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/kingblockio/kingblock/crypto/keys"
 	"github.com/tendermint/tendermint/crypto"
 
 	cfg "github.com/tendermint/tendermint/config"
@@ -25,10 +25,10 @@ import (
 	pvm "github.com/tendermint/tendermint/privval"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	clkeys "github.com/cosmos/cosmos-sdk/client/keys"
-	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
+	clkeys "github.com/kingblockio/kingblock/client/keys"
+	serverconfig "github.com/kingblockio/kingblock/server/config"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
 )
 
 //Parameter names, for init gen-tx command

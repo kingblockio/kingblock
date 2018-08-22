@@ -5,20 +5,20 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/client/lcd"
-	"github.com/cosmos/cosmos-sdk/client/rpc"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/version"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	bankcmd "github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	govcmd "github.com/cosmos/cosmos-sdk/x/gov/client/cli"
-	ibccmd "github.com/cosmos/cosmos-sdk/x/ibc/client/cli"
-	slashingcmd "github.com/cosmos/cosmos-sdk/x/slashing/client/cli"
-	stakecmd "github.com/cosmos/cosmos-sdk/x/stake/client/cli"
+	"github.com/kingblockio/kingblock/client"
+	"github.com/kingblockio/kingblock/client/keys"
+	"github.com/kingblockio/kingblock/client/lcd"
+	"github.com/kingblockio/kingblock/client/rpc"
+	"github.com/kingblockio/kingblock/client/tx"
+	"github.com/kingblockio/kingblock/version"
+	authcmd "github.com/kingblockio/kingblock/x/auth/client/cli"
+	bankcmd "github.com/kingblockio/kingblock/x/bank/client/cli"
+	govcmd "github.com/kingblockio/kingblock/x/gov/client/cli"
+	ibccmd "github.com/kingblockio/kingblock/x/ibc/client/cli"
+	slashingcmd "github.com/kingblockio/kingblock/x/slashing/client/cli"
+	stakecmd "github.com/kingblockio/kingblock/x/stake/client/cli"
 
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	"github.com/kingblockio/kingblock/cmd/gaia/app"
 )
 
 // rootCmd is the entry point for this binary

@@ -7,7 +7,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/kingblockio/kingblock/baseapp"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -18,17 +18,17 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	bam "github.com/kingblockio/kingblock/baseapp"
+	sdk "github.com/kingblockio/kingblock/types"
 
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/auth"
+	"github.com/kingblockio/kingblock/x/bank"
+	"github.com/kingblockio/kingblock/x/ibc"
+	"github.com/kingblockio/kingblock/x/slashing"
+	"github.com/kingblockio/kingblock/x/stake"
 
-	gaia "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	gaia "github.com/kingblockio/kingblock/cmd/gaia/app"
 )
 
 func runHackCmd(cmd *cobra.Command, args []string) error {
@@ -235,7 +235,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	var genesisState gaia.GenesisState
 	err := app.cdc.UnmarshalJSON(stateJSON, &genesisState)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
+		panic(err) // TODO https://github.com/kingblockio/kingblock/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 
 	// load the accounts
@@ -247,7 +247,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	// load the initial stake information
 	err = stake.InitGenesis(ctx, app.stakeKeeper, genesisState.StakeData)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
+		panic(err) // TODO https://github.com/kingblockio/kingblock/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 
 	return abci.ResponseInitChain{}

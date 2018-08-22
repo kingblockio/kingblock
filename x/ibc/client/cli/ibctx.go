@@ -5,14 +5,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/kingblockio/kingblock/client"
+	"github.com/kingblockio/kingblock/client/context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	wire "github.com/cosmos/cosmos-sdk/wire"
+	sdk "github.com/kingblockio/kingblock/types"
+	wire "github.com/kingblockio/kingblock/wire"
 
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
+	authcmd "github.com/kingblockio/kingblock/x/auth/client/cli"
+	"github.com/kingblockio/kingblock/x/ibc"
 )
 
 const (

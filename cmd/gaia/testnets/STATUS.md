@@ -1,6 +1,6 @@
 # DEPRECATED
 
-See [testnets repo](https://github.com/cosmos/testnets).
+See [testnets repo](https://github.com/kingblockio/testnets).
 
 ## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001 
 
@@ -35,23 +35,23 @@ See [testnets repo](https://github.com/cosmos/testnets).
 ## *June 13, 2018, 4:30 EST* - New Testnet Gaia-6002
 
 - After fixing bugs from gaia-6001, especially [issue
-  #1197](https://github.com/cosmos/cosmos-sdk/issues/1197), we are announcing a
+  #1197](https://github.com/kingblockio/kingblock/issues/1197), we are announcing a
   new testnet, Gaia-6002
 - Gaia-6002 has the same genesis file as Gaia-6001, just with the chain-id
   updated
-- Update from previous testnet [here](https://github.com/cosmos/cosmos-sdk/tree/master/cmd/gaia/testnets#upgrading-from-previous-testnet)
+- Update from previous testnet [here](https://github.com/kingblockio/kingblock/tree/master/cmd/gaia/testnets#upgrading-from-previous-testnet)
 
 ## *June 13, 2018, 4:30 EST* - New Release
 
 - Released gaia
-  [v0.19.0](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.19.0)
+  [v0.19.0](https://github.com/kingblockio/kingblock/releases/tag/v0.19.0)
 - Includes various bug-fixes for staking found on Gaia-6001
 
 ## *June 13, 2018, 2:30 EST* - Published Postmortem of Gaia-6001 failure
 
 - A bug in the design of the staking data model caused a sanity check to fail
 - Full writeup
-  [here](https://github.com/cosmos/cosmos-sdk/issues/1197#issuecomment-396823021)
+  [here](https://github.com/kingblockio/kingblock/issues/1197#issuecomment-396823021)
 
 ## *June 10, 2018, 8:30 EST* - Gaia-6001 consensus failure
 
@@ -64,7 +64,7 @@ See [testnets repo](https://github.com/cosmos/testnets).
 ## *June 9, 2018, 14:00 EST* - New Release
 
 - Released gaia
-  [v0.18.0](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.18.0) with
+  [v0.18.0](https://github.com/kingblockio/kingblock/releases/tag/v0.18.0) with
   update for Tendermint
   [v0.20.0](https://github.com/tendermint/tendermint/releases/tag/v0.20.0)
 - Includes bug fix for declaring candidacy from the command line
@@ -92,7 +92,7 @@ See [testnets repo](https://github.com/cosmos/testnets).
 ## *June 5, 2018, 21:00 EST* - New Release
 
 - Released gaia
-  [v0.17.5](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.5) 
+  [v0.17.5](https://github.com/kingblockio/kingblock/releases/tag/v0.17.5) 
   with update for Tendermint
   [v0.19.9](https://github.com/tendermint/tendermint/releases/tag/v0.19.9)
 - Fixes many bugs!
@@ -106,7 +106,7 @@ See [testnets repo](https://github.com/cosmos/testnets).
 ## *May 31, 2018, 14:00 EST* - New Release
 
 - Released gaia
-  [v0.17.4](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.4) with update for Tendermint v0.19.7
+  [v0.17.4](https://github.com/kingblockio/kingblock/releases/tag/v0.17.4) with update for Tendermint v0.19.7
 - Fixes a WAL bug and some more
 - Please update to this if you have trouble restarting a node
 

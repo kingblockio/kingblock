@@ -6,14 +6,14 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/kingblockio/kingblock/client"
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	ccrypto "github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	ccrypto "github.com/kingblockio/kingblock/crypto"
+	"github.com/kingblockio/kingblock/crypto/keys"
 
 	"github.com/tendermint/tendermint/libs/cli"
 )

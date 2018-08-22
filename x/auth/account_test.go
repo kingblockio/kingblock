@@ -8,8 +8,8 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	wire "github.com/cosmos/cosmos-sdk/wire"
+	sdk "github.com/kingblockio/kingblock/types"
+	wire "github.com/kingblockio/kingblock/wire"
 )
 
 func keyPubAddr() (crypto.PrivKey, crypto.PubKey, sdk.AccAddress) {

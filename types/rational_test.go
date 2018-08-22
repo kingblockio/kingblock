@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	wire "github.com/cosmos/cosmos-sdk/wire"
+	wire "github.com/kingblockio/kingblock/wire"
 	"github.com/stretchr/testify/require"
 )
 

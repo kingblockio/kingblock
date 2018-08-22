@@ -6,13 +6,13 @@ import (
 
 	"github.com/spf13/viper"
 
-	keys "github.com/cosmos/cosmos-sdk/crypto/keys"
+	keys "github.com/kingblockio/kingblock/crypto/keys"
 	"github.com/tendermint/tendermint/libs/cli"
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/kingblockio/kingblock/client"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 // KeyDBName is the directory under root where we store the keys

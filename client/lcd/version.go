@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/kingblockio/kingblock/client/context"
+	"github.com/kingblockio/kingblock/version"
 )
 
 // cli version REST handler endpoint

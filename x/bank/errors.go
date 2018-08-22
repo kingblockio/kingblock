@@ -2,7 +2,7 @@
 package bank
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 // Bank errors reserve 100 ~ 199.

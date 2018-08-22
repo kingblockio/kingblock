@@ -5,10 +5,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/kingblockio/kingblock/baseapp"
 
-	"github.com/cosmos/cosmos-sdk/examples/basecoin/app"
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/kingblockio/kingblock/kingchain/app"
+	"github.com/kingblockio/kingblock/server"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	abci "github.com/tendermint/tendermint/abci/types"

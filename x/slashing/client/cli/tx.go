@@ -3,11 +3,11 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
+	"github.com/kingblockio/kingblock/client/context"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	authcmd "github.com/kingblockio/kingblock/x/auth/client/cli"
+	"github.com/kingblockio/kingblock/x/slashing"
 )
 
 // create unrevoke command

@@ -7,11 +7,11 @@ import (
 	"github.com/spf13/viper"
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/kingblockio/kingblock/client/context"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/stake"
+	"github.com/kingblockio/kingblock/x/stake/types"
 )
 
 // get the command to query a validator

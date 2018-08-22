@@ -7,8 +7,8 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/server/mock"
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/server/mock"
+	"github.com/kingblockio/kingblock/wire"
 	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
 )
 

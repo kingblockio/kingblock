@@ -4,7 +4,7 @@ import (
 	"math"
 	"reflect"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 

@@ -3,11 +3,11 @@ package server
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/wire"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
 	"github.com/tendermint/tendermint/p2p"
 	pvm "github.com/tendermint/tendermint/privval"

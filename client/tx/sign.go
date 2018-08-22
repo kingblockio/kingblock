@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	keybase "github.com/cosmos/cosmos-sdk/client/keys"
-	keys "github.com/cosmos/cosmos-sdk/crypto/keys"
+	keybase "github.com/kingblockio/kingblock/client/keys"
+	keys "github.com/kingblockio/kingblock/crypto/keys"
 )
 
 // REST request body

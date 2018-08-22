@@ -3,7 +3,7 @@ package context
 import (
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/kingblockio/kingblock/x/auth"
 )
 
 // typical context created in sdk modules for transactions/queries

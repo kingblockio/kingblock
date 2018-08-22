@@ -1,7 +1,7 @@
 package gov
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 // Handle all "gov" type messages.

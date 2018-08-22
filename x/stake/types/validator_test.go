@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	tmtypes "github.com/tendermint/tendermint/types"
@@ -32,7 +32,7 @@ func TestUpdateDescription(t *testing.T) {
 		Details:  doNotModifyDescVal,
 	}
 	d2 := Description{
-		Website: "https://validator.cosmos",
+		Website: "https://validator.kingblockio",
 		Details: "Test validator",
 	}
 

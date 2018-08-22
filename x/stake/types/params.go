@@ -3,7 +3,7 @@ package types
 import (
 	"bytes"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 // defaultUnbondingTime reflects three weeks in seconds as the default

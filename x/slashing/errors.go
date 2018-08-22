@@ -2,7 +2,7 @@
 package slashing
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 // Local code type

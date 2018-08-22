@@ -1,7 +1,7 @@
 package keys
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/kingblockio/kingblock/client"
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 )

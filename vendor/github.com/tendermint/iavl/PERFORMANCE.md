@@ -6,7 +6,7 @@ As Jae notes: for CheckTx, a copy of IAVLTree doesn't need to be saved. During C
 
 Jae: That said, I'm not sure exactly what the tx throughput would be during normal running times. I'm hoping that we can have e.g. 3 second blocks w/ say over a hundred txs per sec per block w/ 1 million items. That will get us through for some time, but that time is limited.
 
-Ethan: I agree, and think this works now with goleveldb backing on most host machines.  For public chains, maybe it is desired to push 1000 tx every 3 sec to a block, with a db size of 1 billion items.  10x the throughput with 1000x the data.  That could be a long-term goal, and would scale to the cosmos and beyond.
+Ethan: I agree, and think this works now with goleveldb backing on most host machines.  For public chains, maybe it is desired to push 1000 tx every 3 sec to a block, with a db size of 1 billion items.  10x the throughput with 1000x the data.  That could be a long-term goal, and would scale to the kingblockio and beyond.
 
 ## Plan
 

@@ -8,16 +8,16 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/wire"
 "github.com/tendermint/tendermint/libs/log"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/kingblockio/kingblock/x/auth"
 	cmn "github.com/tendermint/tendermint/libs/common"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/kingblockio/kingblock/client"
+	"github.com/kingblockio/kingblock/client/keys"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 // Broadcast the transaction bytes to Tendermint

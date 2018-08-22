@@ -2,9 +2,9 @@
 package stake
 
 import (
-	"github.com/cosmos/cosmos-sdk/x/stake/keeper"
-	"github.com/cosmos/cosmos-sdk/x/stake/tags"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/kingblockio/kingblock/x/stake/keeper"
+	"github.com/kingblockio/kingblock/x/stake/tags"
+	"github.com/kingblockio/kingblock/x/stake/types"
 )
 
 type (

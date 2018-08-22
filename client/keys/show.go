@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	keys "github.com/cosmos/cosmos-sdk/crypto/keys"
+	keys "github.com/kingblockio/kingblock/crypto/keys"
 	"github.com/gorilla/mux"
 
 	"github.com/spf13/cobra"

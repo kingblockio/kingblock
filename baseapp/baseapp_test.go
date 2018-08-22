@@ -14,8 +14,8 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
 )
 
 //------------------------------------------------------------------------------------------
@@ -38,10 +38,10 @@ func registerTestCodec(cdc *wire.Codec) {
 	sdk.RegisterWire(cdc)
 
 	// register test types
-	cdc.RegisterConcrete(&txTest{}, "cosmos-sdk/baseapp/txTest", nil)
-	cdc.RegisterConcrete(&msgCounter{}, "cosmos-sdk/baseapp/msgCounter", nil)
-	cdc.RegisterConcrete(&msgCounter2{}, "cosmos-sdk/baseapp/msgCounter2", nil)
-	cdc.RegisterConcrete(&msgNoRoute{}, "cosmos-sdk/baseapp/msgNoRoute", nil)
+	cdc.RegisterConcrete(&txTest{}, "kingblock/baseapp/txTest", nil)
+	cdc.RegisterConcrete(&msgCounter{}, "kingblock/baseapp/msgCounter", nil)
+	cdc.RegisterConcrete(&msgCounter2{}, "kingblock/baseapp/msgCounter2", nil)
+	cdc.RegisterConcrete(&msgNoRoute{}, "kingblock/baseapp/msgNoRoute", nil)
 }
 
 // simple one store baseapp
@@ -155,7 +155,7 @@ func testChangeNameHelper(name string) func(*BaseApp) {
 }
 
 // Test that the app hash is static
-// TODO: https://github.com/cosmos/cosmos-sdk/issues/520
+// TODO: https://github.com/kingblockio/kingblock/issues/520
 /*func TestStaticAppHash(t *testing.T) {
 	app := newBaseApp(t.Name())
 
@@ -689,7 +689,7 @@ func TestRunInvalidTransaction(t *testing.T) {
 		// new codec so we can encode the tx, but we shouldn't be able to decode
 		newCdc := wire.NewCodec()
 		registerTestCodec(newCdc)
-		newCdc.RegisterConcrete(&msgNoDecode{}, "cosmos-sdk/baseapp/msgNoDecode", nil)
+		newCdc.RegisterConcrete(&msgNoDecode{}, "kingblock/baseapp/msgNoDecode", nil)
 
 		txBytes, err := newCdc.MarshalBinary(tx)
 		require.NoError(t, err)

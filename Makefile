@@ -1,11 +1,11 @@
 PACKAGES=$(shell go list ./... | grep -v '/vendor/')
-PACKAGES_NOCLITEST=$(shell go list ./... | grep -v '/vendor/' | grep -v github.com/cosmos/cosmos-sdk/cmd/gaia/cli_test)
+PACKAGES_NOCLITEST=$(shell go list ./... | grep -v '/vendor/' | grep -v github.com/kingblockio/kingblock/cmd/gaia/cli_test)
 COMMIT_HASH := $(shell git rev-parse --short HEAD)
 BUILD_TAGS = netgo ledger
-BUILD_FLAGS = -tags "${BUILD_TAGS}" -ldflags "-X github.com/cosmos/cosmos-sdk/version.GitCommit=${COMMIT_HASH}"
+BUILD_FLAGS = -tags "${BUILD_TAGS}" -ldflags "-X github.com/kingblockio/kingblock/version.GitCommit=${COMMIT_HASH}"
 GCC := $(shell command -v gcc 2> /dev/null)
 LEDGER_ENABLED ?= true
-all: get_tools get_vendor_deps install install_examples test_lint test
+all: get_tools get_vendor_deps install install_kingchain test_lint test
 
 ########################################
 ### CI
@@ -85,14 +85,14 @@ get_vendor_deps:
 draw_deps:
 	@# requires brew install graphviz or apt-get install graphviz
 	go get github.com/RobotsAndPencils/goviz
-	@goviz -i github.com/cosmos/cosmos-sdk/cmd/gaia/cmd/gaiad -d 2 | dot -Tpng -o dependency-graph.png
+	@goviz -i github.com/kingblockio/kingblock/cmd/gaia/cmd/gaiad -d 2 | dot -Tpng -o dependency-graph.png
 
 
 ########################################
 ### Documentation
 
 godocs:
-	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/cosmos/cosmos-sdk/types"
+	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/kingblockio/kingblock/types"
 	godoc -http=:6060
 
 
@@ -102,7 +102,7 @@ godocs:
 test: test_unit
 
 test_cli:
-	@go test -count 1 -p 1 `go list github.com/cosmos/cosmos-sdk/cmd/gaia/cli_test`
+	@go test -count 1 -p 1 `go list github.com/kingblockio/kingblock/cmd/gaia/cli_test`
 
 test_unit:
 	@go test $(PACKAGES_NOCLITEST)
@@ -132,12 +132,12 @@ benchmark:
 DEVDOC_SAVE = docker commit `docker ps -a -n 1 -q` devdoc:local
 
 devdoc_init:
-	docker run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" tendermint/devdoc echo
+	docker run -it -v "$(CURDIR):/go/src/github.com/kingblockio/kingblock" -w "/go/src/github.com/kingblockio/kingblock" tendermint/devdoc echo
 	# TODO make this safer
 	$(call DEVDOC_SAVE)
 
 devdoc:
-	docker run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" devdoc:local bash
+	docker run -it -v "$(CURDIR):/go/src/github.com/kingblockio/kingblock" -w "/go/src/github.com/kingblockio/kingblock" devdoc:local bash
 
 devdoc_save:
 	# TODO make this safer

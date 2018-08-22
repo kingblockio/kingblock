@@ -8,7 +8,7 @@ import (
 	"github.com/tendermint/tendermint/crypto/merkle"
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 const useDebugDB = false

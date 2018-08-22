@@ -1,11 +1,11 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
 
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/kingblockio/kingblock/x/bank"
+	"github.com/kingblockio/kingblock/x/stake/types"
 )
 
 // keeper of the stake store

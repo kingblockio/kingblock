@@ -4,8 +4,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/client/context"
+	"github.com/kingblockio/kingblock/wire"
 )
 
 // AddCommands adds a number of tx-query related subcommands

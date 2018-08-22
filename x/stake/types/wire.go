@@ -1,18 +1,18 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/wire"
 )
 
 // Register concrete types on wire codec
 func RegisterWire(cdc *wire.Codec) {
-	cdc.RegisterConcrete(MsgCreateValidator{}, "cosmos-sdk/MsgCreateValidator", nil)
-	cdc.RegisterConcrete(MsgEditValidator{}, "cosmos-sdk/MsgEditValidator", nil)
-	cdc.RegisterConcrete(MsgDelegate{}, "cosmos-sdk/MsgDelegate", nil)
-	cdc.RegisterConcrete(MsgBeginUnbonding{}, "cosmos-sdk/BeginUnbonding", nil)
-	cdc.RegisterConcrete(MsgCompleteUnbonding{}, "cosmos-sdk/CompleteUnbonding", nil)
-	cdc.RegisterConcrete(MsgBeginRedelegate{}, "cosmos-sdk/BeginRedelegate", nil)
-	cdc.RegisterConcrete(MsgCompleteRedelegate{}, "cosmos-sdk/CompleteRedelegate", nil)
+	cdc.RegisterConcrete(MsgCreateValidator{}, "kingblock/MsgCreateValidator", nil)
+	cdc.RegisterConcrete(MsgEditValidator{}, "kingblock/MsgEditValidator", nil)
+	cdc.RegisterConcrete(MsgDelegate{}, "kingblock/MsgDelegate", nil)
+	cdc.RegisterConcrete(MsgBeginUnbonding{}, "kingblock/BeginUnbonding", nil)
+	cdc.RegisterConcrete(MsgCompleteUnbonding{}, "kingblock/CompleteUnbonding", nil)
+	cdc.RegisterConcrete(MsgBeginRedelegate{}, "kingblock/BeginRedelegate", nil)
+	cdc.RegisterConcrete(MsgCompleteRedelegate{}, "kingblock/CompleteRedelegate", nil)
 }
 
 // generic sealed codec to be used throughout sdk

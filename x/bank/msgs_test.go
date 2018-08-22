@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 )
 
 func TestNewMsgSend(t *testing.T) {}
@@ -187,7 +187,7 @@ func TestMsgSendGetSignBytes(t *testing.T) {
 	}
 	res := msg.GetSignBytes()
 
-	expected := `{"inputs":[{"address":"cosmosaccaddr1d9h8qat5e4ehc5","coins":[{"amount":"10","denom":"atom"}]}],"outputs":[{"address":"cosmosaccaddr1da6hgur4wse3jx32","coins":[{"amount":"10","denom":"atom"}]}]}`
+	expected := `{"inputs":[{"address":"kingblockioaccaddr1d9h8qat5e4ehc5","coins":[{"amount":"10","denom":"atom"}]}],"outputs":[{"address":"kingblockioaccaddr1da6hgur4wse3jx32","coins":[{"amount":"10","denom":"atom"}]}]}`
 	require.Equal(t, expected, string(res))
 }
 
@@ -257,7 +257,7 @@ func TestMsgIssueGetSignBytes(t *testing.T) {
 	}
 	res := msg.GetSignBytes()
 
-	expected := `{"banker":"cosmosaccaddr1d9h8qat5e4ehc5","outputs":[{"address":"cosmosaccaddr1d3hkzm3dveex7mfdvfsku6cwsauqd","coins":[{"amount":"10","denom":"atom"}]}]}`
+	expected := `{"banker":"kingblockioaccaddr1d9h8qat5e4ehc5","outputs":[{"address":"kingblockioaccaddr1d3hkzm3dveex7mfdvfsku6cwsauqd","coins":[{"amount":"10","denom":"atom"}]}]}`
 	require.Equal(t, expected, string(res))
 }
 

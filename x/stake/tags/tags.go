@@ -2,7 +2,7 @@
 package tags
 
 import (
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/kingblockio/kingblock/types"
 )
 
 var (

@@ -8,8 +8,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/kingblockio/kingblock/client"
+	"github.com/kingblockio/kingblock/client/context"
 )
 
 const (

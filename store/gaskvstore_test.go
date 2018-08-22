@@ -3,7 +3,7 @@ package store
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/kingblockio/kingblock/types"
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tendermint/libs/db"
 )

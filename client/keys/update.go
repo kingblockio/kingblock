@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	keys "github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/kingblockio/kingblock/client"
+	keys "github.com/kingblockio/kingblock/crypto/keys"
 	"github.com/gorilla/mux"
 
 	"github.com/spf13/cobra"

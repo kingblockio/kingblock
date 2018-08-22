@@ -15,7 +15,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	crkeys "github.com/cosmos/cosmos-sdk/crypto/keys"
+	crkeys "github.com/kingblockio/kingblock/crypto/keys"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmcfg "github.com/tendermint/tendermint/config"
 	"github.com/tendermint/tendermint/crypto"
@@ -29,14 +29,14 @@ import (
 	tmrpc "github.com/tendermint/tendermint/rpc/lib/server"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	keys "github.com/cosmos/cosmos-sdk/client/keys"
-	gapp "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/tests"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/wire"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/kingblockio/kingblock/client"
+	keys "github.com/kingblockio/kingblock/client/keys"
+	gapp "github.com/kingblockio/kingblock/cmd/gaia/app"
+	"github.com/kingblockio/kingblock/server"
+	"github.com/kingblockio/kingblock/tests"
+	sdk "github.com/kingblockio/kingblock/types"
+	"github.com/kingblockio/kingblock/wire"
+	"github.com/kingblockio/kingblock/x/auth"
 )
 
 // f**ing long, but unique for each test

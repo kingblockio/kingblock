@@ -1,13 +1,13 @@
 package bank
 
 import (
-	"github.com/cosmos/cosmos-sdk/wire"
+	"github.com/kingblockio/kingblock/wire"
 )
 
 // Register concrete types on wire codec
 func RegisterWire(cdc *wire.Codec) {
-	cdc.RegisterConcrete(MsgSend{}, "cosmos-sdk/Send", nil)
-	cdc.RegisterConcrete(MsgIssue{}, "cosmos-sdk/Issue", nil)
+	cdc.RegisterConcrete(MsgSend{}, "kingblock/Send", nil)
+	cdc.RegisterConcrete(MsgIssue{}, "kingblock/Issue", nil)
 }
 
 var msgCdc = wire.NewCodec()
