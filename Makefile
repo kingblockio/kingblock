@@ -54,11 +54,9 @@ install: check-ledger
 	go install $(BUILD_FLAGS) ./cmd/gaia/cmd/gaiad
 	go install $(BUILD_FLAGS) ./cmd/gaia/cmd/gaiacli
 
-install_examples:
-	go install $(BUILD_FLAGS) ./examples/basecoin/cmd/basecoind
-	go install $(BUILD_FLAGS) ./examples/basecoin/cmd/basecli
-	go install $(BUILD_FLAGS) ./examples/democoin/cmd/democoind
-	go install $(BUILD_FLAGS) ./examples/democoin/cmd/democli
+install_kingchain:
+	go install $(BUILD_FLAGS) ./kingchain/cmd/kingchaind
+	go install $(BUILD_FLAGS) ./kingchain/cmd/kingchaincli
 
 install_debug:
 	go install $(BUILD_FLAGS) ./cmd/gaia/cmd/gaiadebug
